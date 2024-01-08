@@ -1,0 +1,9 @@
+name: hello-gitActions
+on: push
+jobs:
+  helloworldjob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v3
+      - run: echo "$(cat hello_world.txt)"
